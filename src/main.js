@@ -1,6 +1,6 @@
 import "./style.css";
 
-const _phone = "6285880811396";
+const _phone = "6285880811301";
 const _msgs = {
   schedule: encodeURIComponent(
     "Halo SuperClass! 👋 Saya ingin mengetahui *Info Schedule & Free Trial*. Boleh saya mendapatkan informasi lebih lanjut? ",
@@ -349,7 +349,7 @@ function buildHTML() {
                 </div>
                 <div class="flex items-center gap-3">
                   <span class="text-yellow-400 flex-shrink-0">${icon("phone","w-4 h-4")}</span>
-                  <span>+62 858-8081-1396</span>
+                  <span>+62 858-8081-1301</span>
                 </div>
               </div>
               <button onclick="openWA('schedule')" class="mt-5 btn-gold px-6 py-3 rounded-xl text-sm w-full">Hubungi Cabang Ini</button>
