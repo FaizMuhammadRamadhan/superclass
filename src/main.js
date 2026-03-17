@@ -1,6 +1,5 @@
 import "./style.css";
 
-// ─── WA CONFIG ────────────────────────────────────────────────────────────────
 const _phone = "6285880811396";
 const _msgs = {
   schedule: encodeURIComponent(
@@ -12,8 +11,6 @@ const _msgs = {
 };
 const _waUrl = (type) => `https://wa.me/${_phone}?text=${_msgs[type]}`;
 
-// ─── INLINE SVG ICON HELPER ───────────────────────────────────────────────────
-// All icons are hand-crafted SVGs — no external dependency needed at runtime.
 function icon(name, cls = "w-5 h-5") {
   const base = `xmlns="http://www.w3.org/2000/svg" class="${cls}" viewBox="0 0 24 24"`;
   const stroke = `fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"`;
@@ -41,7 +38,6 @@ function icon(name, cls = "w-5 h-5") {
   return icons[name] ?? "";
 }
 
-// ─── BUILD HTML ───────────────────────────────────────────────────────────────
 document.querySelector("#app").innerHTML = buildHTML();
 initApp();
 
@@ -53,7 +49,7 @@ function buildHTML() {
         <div class="flex items-center justify-between h-16 lg:h-20">
           <div class="flex items-center gap-3">
             <div class="w-12 h-10 rounded-xl flex items-center justify-center overflow-hidden shadow-lg">
-              <img src="public/images/logo.jpg" alt="SuperClass Logo" class="rounded-lg">
+              <img src="/images/logo.jpg" alt="SuperClass Logo" class="rounded-lg">
             </div>
             <div>
               <span class="font-black orange-text text-xl tracking-wide" style="font-family:'Bebas Neue',cursive;letter-spacing:3px;">SUPER</span>
@@ -62,9 +58,9 @@ function buildHTML() {
           </div>
 
           <div class="hidden md:flex items-center gap-8">
-            <a href="#home" class="nav-link text-black hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Home</a>
-            <a href="#service" class="nav-link text-black hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Service</a>
-            <a href="#about" class="nav-link text-black hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">About</a>
+            <a href="#home" class="nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Home</a>
+            <a href="#service" class="nav-link  orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Service</a>
+            <a href="#about" class="nav-link  orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">About</a>
           </div>
 
           <button id="menu-toggle" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors">
@@ -154,7 +150,7 @@ function buildHTML() {
                    style="aspect-ratio:3/4;">
                 <!-- Replace src with your actual hero photo path -->
                 <img
-                  src="public/images/hero.jpg"
+                  src="/images/hero.jpg"
                   alt="SuperClass Martial Arts Training"
                   class="w-full h-full object-cover object-top"
                   onerror="this.style.display='none';document.getElementById('hero-fallback').style.display='flex';"
@@ -407,7 +403,7 @@ function buildHTML() {
           <div class="lg:col-span-2">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center overflow-hidden">
-                <img src="public/images/logo.jpg" alt="SuperClass Logo" class="rounded-lg">
+                <img src="/images/logo.jpg" alt="SuperClass Logo" class="rounded-lg">
               </div>
               <div>
                 <span class="font-black orange-text text-xl" style="font-family:'Bebas Neue',cursive;letter-spacing:3px;">SUPER</span>
