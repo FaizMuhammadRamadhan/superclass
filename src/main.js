@@ -59,11 +59,11 @@ function buildHTML() {
 
           <div class="hidden md:flex items-center gap-8">
             <a href="#home" class="nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Home</a>
-            <a href="#service" class="nav-link  orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Service</a>
-            <a href="#about" class="nav-link  orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">About</a>
+            <a href="#service" class="nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">Service</a>
+            <a href="#about" class="nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors duration-200">About</a>
           </div>
 
-          <button id="menu-toggle" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors">
+          <button id="menu-toggle" class="md:hidden orange-text p-2 rounded-lg hover:bg-white/10 transition-colors">
             <span id="icon-open">${icon("menu", "w-6 h-6")}</span>
             <span id="icon-close" class="hidden">${icon("xmark", "w-6 h-6")}</span>
           </button>
@@ -71,10 +71,9 @@ function buildHTML() {
 
         <div id="mobile-menu" class="md:hidden">
           <div class="bg-gray-900/95 backdrop-blur-sm rounded-2xl mx-2 mb-4 p-4 flex flex-col gap-3 border border-yellow-400/20">
-            <a href="#home" class="mobile-nav-link text-gray-300 hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2 border-b border-white/10">Home</a>
-            <a href="#service" class="mobile-nav-link text-gray-300 hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2 border-b border-white/10">Service</a>
-            <a href="#about" class="mobile-nav-link text-gray-300 hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2">About</a>
-            <button onclick="openWA('schedule')" class="btn-gold w-full py-3 rounded-xl text-sm mt-1">Free Trial Sekarang</button>
+            <a href="#home" class="mobile-nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2 border-b border-white/10">Home</a>
+            <a href="#service" class="mobile-nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2 border-b border-white/10">Service</a>
+            <a href="#about" class="mobile-nav-link orange-text hover:text-yellow-400 font-semibold text-sm uppercase tracking-widest transition-colors py-2">About</a>
           </div>
         </div>
       </div>
