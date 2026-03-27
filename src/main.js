@@ -3,10 +3,10 @@ import "./style.css";
 const _phone = "6285880811301";
 const _msgs = {
   schedule: encodeURIComponent(
-    "Halo SuperClass! 👋 Saya ingin mengetahui *Info Schedule & Free Trial*. Boleh saya mendapatkan informasi lebih lanjut? ",
+    "Halo SuperClass! Saya ingin mengetahui *Info Schedule & Free Trial*. Boleh saya mendapatkan informasi lebih lanjut? ",
   ),
   partner: encodeURIComponent(
-    "Halo SuperClass! 👋 Saya tertarik dengan program *Partnership & Corporate Class*. Bisa dihubungi untuk diskusi lebih lanjut?",
+    "Halo SuperClass! Saya tertarik dengan program *Partnership & Corporate Class*. Bisa dihubungi untuk diskusi lebih lanjut?",
   ),
 };
 const _waUrl = (type) => `https://wa.me/${_phone}?text=${_msgs[type]}`;
@@ -43,7 +43,6 @@ initApp();
 
 function buildHTML() {
   return `
-    <!-- NAVBAR -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
@@ -79,7 +78,6 @@ function buildHTML() {
       </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
     <section id="home" class="relative min-h-screen flex items-center hero-gradient hero-pattern overflow-hidden">
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-1/4 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
@@ -92,7 +90,6 @@ function buildHTML() {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-          <!-- Left Content -->
           <div class="text-white">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-400/40 bg-yellow-400/10 mb-6 fade-up" style="transition-delay:0.1s">
               <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
@@ -136,15 +133,12 @@ function buildHTML() {
             </div>
           </div>
 
-          <!-- Right — Photo Card -->
           <div class="relative hidden lg:flex justify-center items-center fade-up" style="transition-delay:0.3s">
             <div class="relative" style="width:340px;">
 
-              <!-- Soft glow halo -->
               <div class="absolute -inset-6 rounded-3xl blur-3xl"
                    style="background:radial-gradient(ellipse at center,rgba(251,146,60,0.18) 0%,rgba(234,179,8,0.10) 50%,transparent 80%);"></div>
 
-              <!-- Photo card -->
               <div class="relative rounded-3xl overflow-hidden border-2 border-yellow-400/40 shadow-2xl"
                    style="aspect-ratio:3/4;">
                 <!-- Replace src with your actual hero photo path -->
@@ -155,7 +149,6 @@ function buildHTML() {
                   onerror="this.style.display='none';document.getElementById('hero-fallback').style.display='flex';"
                 >
 
-                <!-- Fallback placeholder (shown if hero.jpg doesn't exist) -->
                 <div id="hero-fallback"
                      class="absolute inset-0 flex-col items-center justify-center text-center p-8"
                      style="display:none;background:linear-gradient(155deg,#111 0%,#2d1500 60%,#1a0d00 100%);">
@@ -165,11 +158,9 @@ function buildHTML() {
                   <p class="text-gray-500 text-sm">Martial Arts & Fitness</p>
                 </div>
 
-                <!-- Gradient overlay -->
                 <div class="absolute inset-0"
                      style="background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.15) 45%,transparent 70%);"></div>
 
-                <!-- Bottom strip -->
                 <div class="absolute bottom-0 left-0 right-0 p-5">
                   <div class="flex items-center gap-2 mb-2">
                     <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
@@ -184,7 +175,6 @@ function buildHTML() {
               </div>
 
 
-              <!-- Floating certified card -->
               <div class="absolute -left-5 bottom-28 bg-gray-900/90 backdrop-blur-sm border border-orange-400/30 rounded-2xl px-4 py-3 shadow-xl">
                 <div class="flex items-center gap-1.5 mb-0.5">
                   <span class="text-orange-400">${icon("trophy", "w-4 h-4")}</span>
@@ -199,7 +189,6 @@ function buildHTML() {
       </div>
     </section>
 
-    <!-- ===== WHY US ===== -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14 fade-up">
@@ -228,7 +217,6 @@ function buildHTML() {
       </div>
     </section>
 
-    <!-- ===== SERVICE ===== -->
     <section id="service" class="py-20 section-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14 fade-up">
@@ -272,7 +260,6 @@ function buildHTML() {
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
     <section id="about" class="py-20 section-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-14 fade-up">
@@ -395,7 +382,6 @@ function buildHTML() {
       </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
     <footer class="bg-gray-950 text-gray-400 py-12 border-t border-yellow-400/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
@@ -479,7 +465,6 @@ function buildHTML() {
       </div>
     </footer>
 
-    <!-- Floating WA Button -->
     <button onclick="openWA('schedule')"
       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 pulse-wa"
       title="Chat WhatsApp">
@@ -488,7 +473,6 @@ function buildHTML() {
   `;
 }
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────
 function initApp() {
   window.openWA = (type) => window.open(_waUrl(type), "_blank", "noopener,noreferrer");
 
